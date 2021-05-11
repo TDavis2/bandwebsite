@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        * {
+            margin: 0;
+            padding: 0; 
+            box-sizing: border-box;
+        }
+
+        html {
+            background-image: url("images/gallery/background.jpg");
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+        width: 100%;
+        margin: 0;
+        border-bottom: 3px;
+        }
+        header h1 {
+            font-size: 300%;
+            font-variant: small-caps;
+            padding: .5em 0 0;
+            text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+            padding-left: 2em;
+        }
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+        header img {
+            float: left;
+            margin: 1em 1em 0 2em;
+            max-width: 200px;
+            width: 100%;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /****************************************************************************************************************
+        *****************************************************************************************************************
+        *****************************************************************************************************************
+        ******                                                                                                     ******
+        ******                                                                                                     ******
+        ******                                                                                                     ******
+        ******                                          Navigation Menu                                            ******
+        ******                                                                                                     ******
+        ******                                                                                                     ******
+        ******                                                                                                     ******
+        *****************************************************************************************************************
+        *****************************************************************************************************************
+        ****************************************************************************************************************/
+        .nav_menu {
+            border-bottom: 3px;
+            width: 100%;
+        }
+        .nav_menu ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0; 
+        }
+        .nav_menu ul li {
+            width: 50%;
+            background-color: white;
+            margin: 0;
+            text-align: center; 
+            transition: all .75s;
+        }
+        .nav_menu ul li a {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0;
+            text-decoration: none;
+            font-size: 120%;
+            color: lightpink;
+            font-weight: bold;
+            font-variant: small-caps;
+            transition: all .75s;
+        }
+        .nav_menu ul li a:hover {
+            background-color:darkorchid;
+            color: white;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            border-radius: 15px;
+            border: 3px ridge silver;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+        }
+        </style>
+        </meta>
+    </head>
+<body>
+
+<!-- Header -->
+
+<main>
+
+    <header class="clearfix">
+		<h1><a href="index.html"> Juice Wrld </a></h1>
+	</header>
+
+    <nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="videos.html" class="current">Videos</a></li>
+        	<li><a href="gallery.html" class="current">Gallery</a></li>
+    	</ul>
+	</nav>
+
+    <!-- Photo Grid -->
+    <div class="row"> 
+    <div class="column">
+        <img src="images/gallery/juice1.jpg" >
+        <img src="images/gallery/juice2.jpg" >
+        <img src="images/gallery/juice3.jpg" >
+        <img src="images/gallery/juice4.jpg" >
+        <img src="images/gallery/juice5.jpg" >
+        <img src="images/gallery/concert1.jpg" >
+        <img src="images/gallery/concert2.jpg" >
+    </div>
+    <div class="column">
+        <img src="images/gallery/concert3.jpg" >
+        <img src="images/gallery/concert4.jpg" >
+        <img src="images/gallery/concert5.jpg" >
+        <img src="images/gallery/headshot1.jpg" >
+        <img src="images/gallery/headshot2.jpg" >
+        <img src="images/gallery/headshot3.jpg" >
+    </div>  
+    <div class="column">
+        <img src="images/gallery/Juice-WRLD-Goodbye-And-Good-Riddance-Vinyl-LP-2361834_1024x1024.webp" >
+        <img src="images/gallery/LegendsNeverDie.jpg" >
+        <img src="images/gallery/TooSoonalbum.png" >
+        <img src="images/gallery/WorldOnDrugsAlbum.jpg" >
+        <img src="images/gallery/DeathRaceForLoveAlbum.jpg" >
+    </div>
+    <div class="column">
+        <img src="images/gallery/art1.jpg" >
+        <img src="images/gallery/art2.jpg" >
+        <img src="images/gallery/art3.jpg" >
+        <img src="images/gallery/art4.jpg" >
+        <img src="images/gallery/art5.jpg" >
+    </div>
+    </div>
+</main>
+<footer>
+    <p>     </p>
+</footer>
+</body>
+</html>
